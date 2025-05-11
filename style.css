@@ -44,6 +44,10 @@ footer {
   font-size: 14px;
 }
 
+.hidden {
+  display: none;
+}
+
 .enter-field {
   padding: 15px;
   width: 60%;
@@ -58,4 +62,23 @@ footer {
   border-radius: 30px;
   font-size: 15px;
   border: none;
+}
+
+.hint {
+  margin-top: 100px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
